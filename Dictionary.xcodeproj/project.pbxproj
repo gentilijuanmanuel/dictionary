@@ -13,7 +13,6 @@
 		F5B7D6D02048364900BE225C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5B7D6CF2048364900BE225C /* Assets.xcassets */; };
 		F5B7D6D32048364900BE225C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5B7D6D12048364900BE225C /* LaunchScreen.storyboard */; };
 		F5B7D6DB2048375300BE225C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F5B7D6DA2048375300BE225C /* README.md */; };
-		F5B7D6E5204849B600BE225C /* library.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F5B7D6E4204849B600BE225C /* library.jpg */; };
 		F5B7D6E72048540600BE225C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B7D6E62048540600BE225C /* DetailViewController.swift */; };
 		F5E8AF582048726800F9AD49 /* dictionary.png in Resources */ = {isa = PBXBuildFile; fileRef = F5E8AF572048726800F9AD49 /* dictionary.png */; };
 /* End PBXBuildFile section */
@@ -27,7 +26,6 @@
 		F5B7D6D22048364900BE225C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F5B7D6D42048364900BE225C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5B7D6DA2048375300BE225C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		F5B7D6E4204849B600BE225C /* library.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = library.jpg; sourceTree = "<group>"; };
 		F5B7D6E62048540600BE225C /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		F5E8AF572048726800F9AD49 /* dictionary.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dictionary.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -64,7 +62,6 @@
 			isa = PBXGroup;
 			children = (
 				F5E8AF572048726800F9AD49 /* dictionary.png */,
-				F5B7D6E4204849B600BE225C /* library.jpg */,
 				F5B7D6C82048364900BE225C /* AppDelegate.swift */,
 				F5B7D6CA2048364900BE225C /* ViewController.swift */,
 				F5B7D6E62048540600BE225C /* DetailViewController.swift */,
@@ -135,7 +132,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5B7D6E5204849B600BE225C /* library.jpg in Resources */,
 				F5E8AF582048726800F9AD49 /* dictionary.png in Resources */,
 				F5B7D6D32048364900BE225C /* LaunchScreen.storyboard in Resources */,
 				F5B7D6D02048364900BE225C /* Assets.xcassets in Resources */,

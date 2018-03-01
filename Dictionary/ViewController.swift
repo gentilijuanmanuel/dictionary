@@ -73,7 +73,7 @@ class ViewController: UIViewController {
                                 let content = "<html><body><p><font size=30>" + extractHTML! + "</font></p></body><style> p { text-align: justify; }</style></html>"
                                 self.performSegue(withIdentifier: "showDetailSegue", sender: content)
                             } else {
-                                self.messageLabel.text = "No hemos encontrado ningún resultado :("
+                                self.messageLabel.text = "No hemos encontrado ningún resultado 😔"
                             }
                         })
                     } catch {

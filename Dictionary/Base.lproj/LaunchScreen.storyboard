@@ -18,11 +18,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dictionary.png" translatesAutoresizingMaskIntoConstraints="NO" id="i1L-sy-EY9">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dictionary.png" translatesAutoresizingMaskIntoConstraints="NO" id="i1L-sy-EY9">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="i1L-sy-EY9" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="OWD-a0-43p"/>
+                            <constraint firstItem="i1L-sy-EY9" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="izR-nN-ehe"/>
+                            <constraint firstItem="i1L-sy-EY9" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="t6Z-R5-0IH"/>
+                            <constraint firstItem="i1L-sy-EY9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zue-hs-bj4"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>

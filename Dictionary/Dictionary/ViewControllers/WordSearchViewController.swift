@@ -23,14 +23,14 @@ class WordSearchViewController: BaseViewController {
         
         self.addDoneButtonOnKeyboard()
         self.searchWordButton.isEnabled = false
-        self.searchWordTextField.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
+        self.searchWordTextField.addTarget(self, action: #selector(self.textFieldDidChange), for: .editingChanged)
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        self.setColors()
+        self.updateColorsAfterThemeChange()
     }
     
-    override func setColors() {
+    override func updateColorsAfterThemeChange() {
         self.searchWordTextField.textColor = DictionaryColors.defaut
         self.searchWordTextField.setupStyling()
         self.doneBarButtonItem.tintColor = DictionaryColors.defaut
@@ -43,7 +43,7 @@ class WordSearchViewController: BaseViewController {
         
         let flexSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
         self.doneBarButtonItem = UIBarButtonItem(title: "Done", style: .done, target: self, action: #selector(self.doneButtonAction))
-        self.doneBarButtonItem.tintColor = self.traitCollection.userInterfaceStyle == .light ? .black : .white
+        self.doneBarButtonItem.tintColor = DictionaryColors.defaut
         
         let items = [flexSpace, self.doneBarButtonItem]
         doneToolbar.items = items

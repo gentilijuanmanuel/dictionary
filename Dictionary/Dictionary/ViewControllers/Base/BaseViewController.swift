@@ -16,10 +16,10 @@ class BaseViewController: UIViewController {
     
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
         super.traitCollectionDidChange(previousTraitCollection)
-        self.setColors()
+        self.updateColorsAfterThemeChange()
     }
     
-    func setColors() {
+    func updateColorsAfterThemeChange() {
         
     }
 }

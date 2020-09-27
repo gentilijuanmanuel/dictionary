@@ -11,6 +11,7 @@ import UIKit
 class WordResultViewController: BaseViewController {
     
     // MARK: - Properties
+    var doneBarButtonItem: UIBarButtonItem = UIBarButtonItem()
     var definition: Definition?
     var word: String?
     
@@ -26,6 +27,14 @@ class WordResultViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupUI()
+        
+        self.doneBarButtonItem = UIBarButtonItem(title: "Done", style: .done, target: self, action: #selector(self.dismissViewController))
+        self.doneBarButtonItem.tintColor = DictionaryColors.defaut
+        self.navigationItem.rightBarButtonItem  = self.doneBarButtonItem
+    }
+    
+    override func updateColorsAfterThemeChange() {
+        self.doneBarButtonItem.tintColor = DictionaryColors.defaut
     }
     
     // MARK: - Private funcs
@@ -44,5 +53,9 @@ class WordResultViewController: BaseViewController {
                 }
             }
         }
+    }
+    
+    @objc func dismissViewController() {
+        self.dismiss(animated: true, completion: nil)
     }
 }

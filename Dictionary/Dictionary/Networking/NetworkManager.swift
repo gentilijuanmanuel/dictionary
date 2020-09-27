@@ -15,6 +15,7 @@ final class NetworkManager {
     
     // MARK: - Properties
     
+    
     // MARK: - Funcs
     func searchDefinition(word: String, completion: @escaping (_ success: Response?, _ error: String?) -> ()) {
         let url = URL(string: "https://owlbot.info/api/v4/dictionary/\(word)")

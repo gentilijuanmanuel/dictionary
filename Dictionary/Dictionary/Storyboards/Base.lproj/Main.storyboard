@@ -90,7 +90,6 @@
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="sfu-vc-JJM" secondAttribute="trailing" constant="20" id="J6G-TL-BxR"/>
-                                            <constraint firstItem="sfu-vc-JJM" firstAttribute="centerX" secondItem="qIH-An-gac" secondAttribute="centerX" id="QCz-0M-M5E"/>
                                             <constraint firstItem="sfu-vc-JJM" firstAttribute="centerY" secondItem="qIH-An-gac" secondAttribute="centerY" id="T4H-cf-qTl"/>
                                             <constraint firstAttribute="height" constant="50" id="fTf-Cj-Qyl"/>
                                             <constraint firstItem="sfu-vc-JJM" firstAttribute="leading" secondItem="qIH-An-gac" secondAttribute="leading" constant="20" id="hkA-vC-8Ks"/>
@@ -111,7 +110,6 @@
                                             <constraint firstAttribute="trailing" secondItem="oZ5-xs-hlR" secondAttribute="trailing" constant="20" id="F0h-WE-u7C"/>
                                             <constraint firstItem="oZ5-xs-hlR" firstAttribute="centerY" secondItem="LLA-CK-ebP" secondAttribute="centerY" id="IQg-tk-0z6"/>
                                             <constraint firstItem="oZ5-xs-hlR" firstAttribute="leading" secondItem="LLA-CK-ebP" secondAttribute="leading" constant="20" id="K52-7B-UT9"/>
-                                            <constraint firstItem="oZ5-xs-hlR" firstAttribute="centerX" secondItem="LLA-CK-ebP" secondAttribute="centerX" id="P8E-vU-LQi"/>
                                             <constraint firstAttribute="height" constant="50" id="jxv-7Z-ntk"/>
                                         </constraints>
                                     </view>
@@ -122,9 +120,18 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="256"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QTp-7r-hVR">
-                                                        <rect key="frame" x="20" y="20" width="374" height="216"/>
+                                                        <rect key="frame" x="20" y="69" width="374" height="167"/>
                                                         <string key="text">Definition bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla </string>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Definition" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iBT-h1-qaB">
+                                                        <rect key="frame" x="20" y="20" width="374" height="29"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="29" id="krt-nY-b5u"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -132,28 +139,43 @@
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="bottom" secondItem="QTp-7r-hVR" secondAttribute="bottom" constant="20" id="HQ7-yS-Ua4"/>
-                                                    <constraint firstItem="QTp-7r-hVR" firstAttribute="top" secondItem="cj2-Ek-M8A" secondAttribute="top" constant="20" id="YSm-YG-nmy"/>
+                                                    <constraint firstAttribute="trailing" secondItem="iBT-h1-qaB" secondAttribute="trailing" constant="20" id="L9j-Y6-qmN"/>
+                                                    <constraint firstItem="iBT-h1-qaB" firstAttribute="top" secondItem="cj2-Ek-M8A" secondAttribute="top" constant="20" id="XCc-iA-btr"/>
+                                                    <constraint firstItem="QTp-7r-hVR" firstAttribute="top" secondItem="iBT-h1-qaB" secondAttribute="bottom" constant="20" id="e6z-hO-A6Y"/>
                                                     <constraint firstAttribute="trailing" secondItem="QTp-7r-hVR" secondAttribute="trailing" constant="20" id="gTz-Vh-v9w"/>
                                                     <constraint firstItem="QTp-7r-hVR" firstAttribute="leading" secondItem="cj2-Ek-M8A" secondAttribute="leading" constant="20" id="jfx-yo-hsT"/>
+                                                    <constraint firstItem="iBT-h1-qaB" firstAttribute="leading" secondItem="cj2-Ek-M8A" secondAttribute="leading" constant="20" id="p8i-dz-G0i"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DLA-bn-afI">
                                                 <rect key="frame" x="0.0" y="256" width="414" height="256"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6hJ-J3-DyM">
-                                                        <rect key="frame" x="20" y="20" width="374" height="216"/>
+                                                        <rect key="frame" x="20" y="69" width="374" height="167"/>
                                                         <string key="text">Example bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla </string>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Example" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yrU-hC-8jU">
+                                                        <rect key="frame" x="20" y="20" width="374" height="29"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="29" id="whk-OK-nfe"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
+                                                    <constraint firstItem="yrU-hC-8jU" firstAttribute="top" secondItem="DLA-bn-afI" secondAttribute="top" constant="20" id="7gZ-kM-Upu"/>
                                                     <constraint firstAttribute="bottom" secondItem="6hJ-J3-DyM" secondAttribute="bottom" constant="20" id="Glo-eR-rHk"/>
+                                                    <constraint firstItem="6hJ-J3-DyM" firstAttribute="top" secondItem="yrU-hC-8jU" secondAttribute="bottom" constant="20" id="TRg-og-qxh"/>
+                                                    <constraint firstItem="yrU-hC-8jU" firstAttribute="leading" secondItem="DLA-bn-afI" secondAttribute="leading" constant="20" id="TWM-Ql-bZP"/>
                                                     <constraint firstItem="6hJ-J3-DyM" firstAttribute="leading" secondItem="DLA-bn-afI" secondAttribute="leading" constant="20" id="dNl-UU-qkg"/>
                                                     <constraint firstAttribute="trailing" secondItem="6hJ-J3-DyM" secondAttribute="trailing" constant="20" id="fUE-Rt-NpV"/>
-                                                    <constraint firstItem="6hJ-J3-DyM" firstAttribute="top" secondItem="DLA-bn-afI" secondAttribute="top" constant="20" id="mNJ-bk-bWW"/>
+                                                    <constraint firstAttribute="trailing" secondItem="yrU-hC-8jU" secondAttribute="trailing" constant="20" id="spR-Qq-Xqy"/>
                                                 </constraints>
                                             </view>
                                         </subviews>

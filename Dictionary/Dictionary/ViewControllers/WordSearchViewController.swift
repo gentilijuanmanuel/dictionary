@@ -52,10 +52,6 @@ class WordSearchViewController: BaseViewController {
         self.searchWordTextField.inputAccessoryView = doneToolbar
     }
     
-    @objc func doneButtonAction() {
-        self.searchWordTextField.resignFirstResponder()
-    }
-    
     func navigateToResultScreen(definition: Definition?) {
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let newViewController = storyBoard.instantiateViewController(withIdentifier: "WordResultViewController")
@@ -74,6 +70,10 @@ class WordSearchViewController: BaseViewController {
     
     @objc func textFieldDidChange() {
         self.searchWordButton.isEnabled = !(self.searchWordTextField.text?.isEmpty ?? true)
+    }
+    
+    @objc func doneButtonAction() {
+        self.searchWordTextField.resignFirstResponder()
     }
     
     // MARK: - IBActions

@@ -32,7 +32,7 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="apple" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q1f-Gg-do2" customClass="MinimalisticTextField" customModule="Dictionary" customModuleProvider="target">
-                                <rect key="frame" x="82" y="240" width="250" height="49.5"/>
+                                <rect key="frame" x="82" y="230" width="250" height="49.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="VBo-yi-kJI"/>
                                 </constraints>
@@ -44,7 +44,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="rNv-Zh-x6H" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="4M4-WZ-Xa0"/>
-                            <constraint firstItem="q1f-Gg-do2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="NgX-gE-83g"/>
+                            <constraint firstItem="q1f-Gg-do2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="90" id="NgX-gE-83g"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rNv-Zh-x6H" secondAttribute="bottom" constant="16" id="TOZ-s9-orM"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rNv-Zh-x6H" secondAttribute="trailing" constant="16" id="h68-Ng-mCy"/>
                             <constraint firstItem="q1f-Gg-do2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oe8-sP-PKY"/>

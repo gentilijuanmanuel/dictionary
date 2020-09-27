@@ -26,7 +26,7 @@ final class NetworkManager {
         
         var request = URLRequest(url: unwrapedUrl)
         request.httpMethod = "GET"
-        request.setValue("Token 09f00fadb39412024e9db159f5333afaf986c703", forHTTPHeaderField: "Authorization")
+        request.setValue("Token ", forHTTPHeaderField: "Authorization")
         
         let task = URLSession.shared.dataTask(with: request, completionHandler: { (data, response, error) in
             if let _ = error {

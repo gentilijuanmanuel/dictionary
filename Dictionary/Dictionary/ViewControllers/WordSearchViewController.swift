@@ -22,7 +22,8 @@ class WordSearchViewController: BaseViewController {
         super.viewDidLoad()
         
         self.addDoneButtonOnKeyboard()
-        self.searchWordTextField.delegate = self
+        self.searchWordButton.isEnabled = false
+        self.searchWordTextField.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -71,6 +72,10 @@ class WordSearchViewController: BaseViewController {
         self.present(newNavigationController, animated: true, completion: nil)
     }
     
+    @objc func textFieldDidChange() {
+        self.searchWordButton.isEnabled = !(self.searchWordTextField.text?.isEmpty ?? true)
+    }
+    
     // MARK: - IBActions
     @IBAction func searchWordButtonPressed(_ sender: UIButton) {
         self.searchWordButton.showLoading()
@@ -88,17 +93,3 @@ class WordSearchViewController: BaseViewController {
     }
     
 }
-
-extension WordSearchViewController: UITextFieldDelegate {
-    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        guard let textFieldText = textField.text else {
-            return true
-        }
-        
-        self.searchWordButton.isEnabled = textFieldText.count > 0
-        
-        return true
-    }
-}
-
-

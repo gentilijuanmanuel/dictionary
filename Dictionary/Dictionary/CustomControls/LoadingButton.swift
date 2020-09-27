@@ -9,6 +9,13 @@
 import UIKit
 
 class LoadingButton: UIButton {
+    
+    override var isEnabled: Bool {
+        didSet {
+            self.backgroundColor = self.isEnabled ? DictionaryColors.primary : .gray
+        }
+    }
+    
     var originalButtonText: String?
     var activityIndicator: UIActivityIndicatorView!
     

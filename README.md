@@ -1,3 +1,4 @@
 # Dictionary
 
-WIP! 😅
+![Banner](/Art/banner.jpg)
+

@@ -18,7 +18,7 @@ final class NetworkManager {
         let url = URL(string: "https://owlbot.info/api/v4/dictionary/\(word)")
         
         guard let unwrapedUrl = url else {
-            completion(nil, "We had a problem :(")
+            completion(nil, "Something went wrong 🤕")
             return
         }
         
@@ -28,19 +28,23 @@ final class NetworkManager {
         
         let task = URLSession.shared.dataTask(with: request, completionHandler: { (data, response, error) in
             if let _ = error {
-                completion(nil, "We had a problem :(")
+                completion(nil, "Something went wrong 🤕")
                 return
             }
             
-            guard let httpResponse = response as? HTTPURLResponse,
-                (200...299).contains(httpResponse.statusCode) else {
-                    completion(nil, "Error with the response, unexpected status code: \(String(describing: response))")
-                    return
+            guard let httpResponse = response as? HTTPURLResponse else {
+                completion(nil, "Something went wrong 🤕")
+                return
+            }
+            
+            guard (200...299).contains(httpResponse.statusCode) else {
+                completion(nil, "Error with the response, unexpected status code: \(httpResponse.statusCode) 🤕")
+                return
             }
             
             guard let data = data,
                   let definition = try? JSONDecoder().decode(Response.self, from: data) else {
-                completion(nil, "Problem mapping the result :/")
+                completion(nil, "Something went wrong 🤕")
                 return
             }
             

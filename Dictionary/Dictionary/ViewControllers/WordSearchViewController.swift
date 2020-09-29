@@ -68,6 +68,12 @@ class WordSearchViewController: BaseViewController {
         self.present(newNavigationController, animated: true, completion: nil)
     }
     
+    private func showError(withMessage message: String) {
+        let alert = UIAlertController(title: "Oooops!", message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
     @objc private func textFieldDidChange() {
         self.searchWordButton.isEnabled = !(self.searchWordTextField.text?.isEmpty ?? true)
     }
@@ -87,9 +93,8 @@ class WordSearchViewController: BaseViewController {
         NetworkManager.shared.searchDefinition(word: self.searchWordTextField.text!) { definition, error in
             DispatchQueue.main.async {
                 self.searchWordButton.hideLoading()
-                if let error = error {
-                    print(error)
-                    return
+                if let errorMessage = error {
+                    self.showError(withMessage: errorMessage)
                 } else {
                     self.navigateToResultScreen(definition: definition?.definitions?.first ?? nil)
                 }

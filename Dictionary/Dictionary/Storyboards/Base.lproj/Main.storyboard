@@ -72,7 +72,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BIa-Kx-Q1t">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="828.66666666666663"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="818.66666666666663"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cfG-Ob-DHL">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
@@ -93,27 +93,27 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Definition" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iBT-h1-qaB">
-                                                <rect key="frame" x="20" y="323.33333333333331" width="335" height="33.666666666666686"/>
+                                                <rect key="frame" x="20" y="313.33333333333331" width="335" height="33.666666666666686"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QTp-7r-hVR">
-                                                <rect key="frame" x="20" y="367" width="335" height="60"/>
+                                                <rect key="frame" x="20" y="357" width="335" height="60"/>
                                                 <string key="text">Definition bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla </string>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Example" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yrU-hC-8jU">
-                                                <rect key="frame" x="20" y="447" width="335" height="33.333333333333314"/>
+                                                <rect key="frame" x="20" y="437" width="335" height="33.333333333333314"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6hJ-J3-DyM">
-                                                <rect key="frame" x="20" y="490.33333333333337" width="335" height="318.33333333333337"/>
-                                                <mutableString key="text">Example bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla Example bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla Example bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla blabla bla bla bla bla bla bla bla Example bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla blabla bla bla bla bla bla bla bla Example bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla blabla bla bla bla bla bla bla bla Example bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla</mutableString>
+                                                <rect key="frame" x="20" y="480.33333333333337" width="335" height="318.33333333333337"/>
+                                                <string key="text">Example bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla Example bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla Example bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla blabla bla bla bla bla bla bla bla Example bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla blabla bla bla bla bla bla bla bla Example bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla blabla bla bla bla bla bla bla bla Example bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla</string>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -130,7 +130,7 @@
                                             <constraint firstAttribute="trailing" secondItem="oZ5-xs-hlR" secondAttribute="trailing" constant="20" id="LO5-Ab-JK5"/>
                                             <constraint firstItem="sfu-vc-JJM" firstAttribute="leading" secondItem="BIa-Kx-Q1t" secondAttribute="leading" constant="20" id="MgR-9K-wd1"/>
                                             <constraint firstItem="sfu-vc-JJM" firstAttribute="top" secondItem="cfG-Ob-DHL" secondAttribute="bottom" constant="20" id="Qx1-dZ-GLh"/>
-                                            <constraint firstItem="iBT-h1-qaB" firstAttribute="top" secondItem="oZ5-xs-hlR" secondAttribute="bottom" constant="30" id="UYA-KW-jWA"/>
+                                            <constraint firstItem="iBT-h1-qaB" firstAttribute="top" secondItem="oZ5-xs-hlR" secondAttribute="bottom" constant="20" id="UYA-KW-jWA"/>
                                             <constraint firstItem="yrU-hC-8jU" firstAttribute="leading" secondItem="BIa-Kx-Q1t" secondAttribute="leading" constant="20" id="Uh1-sY-lLU"/>
                                             <constraint firstAttribute="trailing" secondItem="cfG-Ob-DHL" secondAttribute="trailing" id="XrD-dt-0oR"/>
                                             <constraint firstItem="yrU-hC-8jU" firstAttribute="top" secondItem="QTp-7r-hVR" secondAttribute="bottom" constant="20" id="afr-PL-1qs"/>
@@ -173,6 +173,8 @@
                     <connections>
                         <outlet property="definitionLabel" destination="QTp-7r-hVR" id="uU1-H5-X45"/>
                         <outlet property="exampleLabel" destination="6hJ-J3-DyM" id="2cq-kA-0Ol"/>
+                        <outlet property="exampleTitle" destination="yrU-hC-8jU" id="fCj-3N-R0i"/>
+                        <outlet property="imageViewHeight" destination="wjE-R4-5Ew" id="SvO-tY-7YB"/>
                         <outlet property="titleLabel" destination="sfu-vc-JJM" id="qWo-nk-Gi5"/>
                         <outlet property="wordImageView" destination="cfG-Ob-DHL" id="fRT-O2-cvk"/>
                         <outlet property="wordTypeLabel" destination="oZ5-xs-hlR" id="1me-P7-Dlz"/>

@@ -24,6 +24,7 @@ final class NetworkManager {
         
         var request = URLRequest(url: unwrapedUrl)
         request.httpMethod = "GET"
+        // MARK: you have to request for a token sending a mail to owlbot
         request.setValue("Token ", forHTTPHeaderField: "Authorization")
         
         let task = URLSession.shared.dataTask(with: request, completionHandler: { (data, response, error) in

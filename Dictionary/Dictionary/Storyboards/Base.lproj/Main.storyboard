@@ -72,47 +72,47 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BIa-Kx-Q1t">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="903.66666666666663"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="828.66666666666663"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cfG-Ob-DHL">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="250" id="wjE-R4-5Ew"/>
+                                                    <constraint firstAttribute="height" constant="200" id="wjE-R4-5Ew"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apple 🍎" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sfu-vc-JJM">
-                                                <rect key="frame" x="20" y="270" width="335" height="48"/>
+                                                <rect key="frame" x="20" y="220" width="335" height="48"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="noun" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oZ5-xs-hlR">
-                                                <rect key="frame" x="20" y="338" width="335" height="20.333333333333314"/>
+                                                <rect key="frame" x="20" y="273" width="335" height="20.333333333333314"/>
                                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
                                                 <color key="textColor" systemColor="systemGrayColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Definition" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iBT-h1-qaB">
-                                                <rect key="frame" x="20" y="378.33333333333331" width="335" height="33.666666666666686"/>
+                                                <rect key="frame" x="20" y="323.33333333333331" width="335" height="33.666666666666686"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QTp-7r-hVR">
-                                                <rect key="frame" x="20" y="432" width="335" height="60"/>
+                                                <rect key="frame" x="20" y="367" width="335" height="60"/>
                                                 <string key="text">Definition bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla </string>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Example" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yrU-hC-8jU">
-                                                <rect key="frame" x="20" y="511.99999999999994" width="335" height="33.333333333333314"/>
+                                                <rect key="frame" x="20" y="447" width="335" height="33.333333333333314"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6hJ-J3-DyM">
-                                                <rect key="frame" x="20" y="565.33333333333337" width="335" height="318.33333333333337"/>
+                                                <rect key="frame" x="20" y="490.33333333333337" width="335" height="318.33333333333337"/>
                                                 <mutableString key="text">Example bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla Example bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla Example bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla blabla bla bla bla bla bla bla bla Example bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla blabla bla bla bla bla bla bla bla Example bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla blabla bla bla bla bla bla bla bla Example bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla</mutableString>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="17"/>
                                                 <nil key="textColor"/>
@@ -125,19 +125,19 @@
                                             <constraint firstItem="6hJ-J3-DyM" firstAttribute="leading" secondItem="BIa-Kx-Q1t" secondAttribute="leading" constant="20" id="5i5-er-I0p"/>
                                             <constraint firstAttribute="bottom" secondItem="6hJ-J3-DyM" secondAttribute="bottom" constant="20" id="88c-xA-5Sl"/>
                                             <constraint firstAttribute="trailing" secondItem="sfu-vc-JJM" secondAttribute="trailing" constant="20" id="C45-M7-Sdf"/>
-                                            <constraint firstItem="QTp-7r-hVR" firstAttribute="top" secondItem="iBT-h1-qaB" secondAttribute="bottom" constant="20" id="D9A-dJ-POZ"/>
+                                            <constraint firstItem="QTp-7r-hVR" firstAttribute="top" secondItem="iBT-h1-qaB" secondAttribute="bottom" constant="10" id="D9A-dJ-POZ"/>
                                             <constraint firstAttribute="trailing" secondItem="QTp-7r-hVR" secondAttribute="trailing" constant="20" id="Ft8-gQ-Nc0"/>
                                             <constraint firstAttribute="trailing" secondItem="oZ5-xs-hlR" secondAttribute="trailing" constant="20" id="LO5-Ab-JK5"/>
                                             <constraint firstItem="sfu-vc-JJM" firstAttribute="leading" secondItem="BIa-Kx-Q1t" secondAttribute="leading" constant="20" id="MgR-9K-wd1"/>
                                             <constraint firstItem="sfu-vc-JJM" firstAttribute="top" secondItem="cfG-Ob-DHL" secondAttribute="bottom" constant="20" id="Qx1-dZ-GLh"/>
-                                            <constraint firstItem="iBT-h1-qaB" firstAttribute="top" secondItem="oZ5-xs-hlR" secondAttribute="bottom" constant="20" id="UYA-KW-jWA"/>
+                                            <constraint firstItem="iBT-h1-qaB" firstAttribute="top" secondItem="oZ5-xs-hlR" secondAttribute="bottom" constant="30" id="UYA-KW-jWA"/>
                                             <constraint firstItem="yrU-hC-8jU" firstAttribute="leading" secondItem="BIa-Kx-Q1t" secondAttribute="leading" constant="20" id="Uh1-sY-lLU"/>
                                             <constraint firstAttribute="trailing" secondItem="cfG-Ob-DHL" secondAttribute="trailing" id="XrD-dt-0oR"/>
                                             <constraint firstItem="yrU-hC-8jU" firstAttribute="top" secondItem="QTp-7r-hVR" secondAttribute="bottom" constant="20" id="afr-PL-1qs"/>
-                                            <constraint firstItem="oZ5-xs-hlR" firstAttribute="top" secondItem="sfu-vc-JJM" secondAttribute="bottom" constant="20" id="bsT-gZ-sYl"/>
+                                            <constraint firstItem="oZ5-xs-hlR" firstAttribute="top" secondItem="sfu-vc-JJM" secondAttribute="bottom" constant="5" id="bsT-gZ-sYl"/>
                                             <constraint firstItem="QTp-7r-hVR" firstAttribute="leading" secondItem="BIa-Kx-Q1t" secondAttribute="leading" constant="20" id="dFU-y7-6BB"/>
                                             <constraint firstItem="cfG-Ob-DHL" firstAttribute="top" secondItem="BIa-Kx-Q1t" secondAttribute="top" id="dpl-Bw-hfX"/>
-                                            <constraint firstItem="6hJ-J3-DyM" firstAttribute="top" secondItem="yrU-hC-8jU" secondAttribute="bottom" constant="20" id="fov-vr-8Lk"/>
+                                            <constraint firstItem="6hJ-J3-DyM" firstAttribute="top" secondItem="yrU-hC-8jU" secondAttribute="bottom" constant="10" id="fov-vr-8Lk"/>
                                             <constraint firstAttribute="trailing" secondItem="iBT-h1-qaB" secondAttribute="trailing" constant="20" id="g50-Ts-w9W"/>
                                             <constraint firstItem="cfG-Ob-DHL" firstAttribute="top" secondItem="BIa-Kx-Q1t" secondAttribute="top" id="gNI-VI-bJz"/>
                                             <constraint firstAttribute="trailing" secondItem="yrU-hC-8jU" secondAttribute="trailing" constant="20" id="jGm-V2-Cc5"/>

@@ -12,6 +12,7 @@ class BaseViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.setupUI()
     }
     
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
@@ -20,6 +21,10 @@ class BaseViewController: UIViewController {
     }
     
     func updateColorsAfterThemeChange() {
+        
+    }
+    
+    func setupUI() {
         
     }
 }

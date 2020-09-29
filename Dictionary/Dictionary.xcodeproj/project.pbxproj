@@ -80,7 +80,7 @@
 				F5A11682251FC984007B7FEE /* Extensions */,
 				F589E255251EE0E700C3DAAE /* CustomControls */,
 				F57FDE2A250DC298007FE55E /* Resources */,
-				F57FDE29250DC28B007FE55E /* Networking */,
+				F57FDE29250DC28B007FE55E /* Managers */,
 				F57FDE28250DC283007FE55E /* Models */,
 				F57FDE27250DC27A007FE55E /* Storyboards */,
 				F57FDE26250DC274007FE55E /* ViewControllers */,
@@ -119,12 +119,12 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		F57FDE29250DC28B007FE55E /* Networking */ = {
+		F57FDE29250DC28B007FE55E /* Managers */ = {
 			isa = PBXGroup;
 			children = (
 				F544CD40250E5994001B04D6 /* NetworkManager.swift */,
 			);
-			path = Networking;
+			path = Managers;
 			sourceTree = "<group>";
 		};
 		F57FDE2A250DC298007FE55E /* Resources */ = {

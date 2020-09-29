@@ -23,22 +23,23 @@ class WordResultViewController: BaseViewController {
     @IBOutlet weak var wordImageView: UIImageView!
     
     // MARK: - ViewController life-cycle
+    override func updateColorsAfterThemeChange() {
+        self.doneBarButtonItem.tintColor = DictionaryColors.defaut
+    }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        self.setupUI()
-        
+    override func setupUI() {
+        self.addDoneBarButtonItem()
+        self.loadDefinitionData()
+    }
+    
+    // MARK: - Private funcs
+    private func addDoneBarButtonItem() {
         self.doneBarButtonItem = UIBarButtonItem(title: "Done", style: .done, target: self, action: #selector(self.dismissViewController))
         self.doneBarButtonItem.tintColor = DictionaryColors.defaut
         self.navigationItem.rightBarButtonItem  = self.doneBarButtonItem
     }
     
-    override func updateColorsAfterThemeChange() {
-        self.doneBarButtonItem.tintColor = DictionaryColors.defaut
-    }
-    
-    // MARK: - Private funcs
-    func setupUI() {
+    private func loadDefinitionData() {
         self.titleLabel.text = self.word ?? "" + " " + definition!.emoji
         self.wordTypeLabel.text = self.definition?.type
         self.definitionLabel.text = self.definition?.definition
@@ -55,7 +56,7 @@ class WordResultViewController: BaseViewController {
         }
     }
     
-    @objc func dismissViewController() {
+    @objc private func dismissViewController() {
         self.dismiss(animated: true, completion: nil)
     }
 }

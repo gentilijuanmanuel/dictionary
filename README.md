@@ -1,4 +1,4 @@
 # Dictionary
 
-![Banner](/Art/banner.jpg)
+![Banner](/Art/banner-cropped.jpg)
 

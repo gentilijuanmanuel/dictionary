@@ -4,10 +4,19 @@
 
 A basic iOS app to search words and its corresponding definition.
 
-## What I learned from this side project
+## What I used/learned from this side project
 
-(wip)
+- Custom, programmatic and reusable controls (to avoid the "massive ViewController problem").
+- Dark/Light mode detection and support.
+- JSON decoding using `Codable`.
+- Swift extensions.
+- Storyboards.
+- Model View Controller (MVC) pattern.
 
 ## Future improvements
 
-(wip)
+- Refactor using MVP pattern.
+- Refactor using MVVM pattern with RxSwift.
+- Unit testing.
+- Apply SwiftLint.
+- SwiftUI in replacement of Storyboards.

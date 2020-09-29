@@ -38,10 +38,13 @@ final class NetworkManager {
                     return
             }
             
-            if let data = data,
-                let definition = try? JSONDecoder().decode(Response.self, from: data) {
-                completion(definition, nil)
+            guard let data = data,
+                  let definition = try? JSONDecoder().decode(Response.self, from: data) else {
+                completion(nil, "Problem mapping the result :/")
+                return
             }
+            
+            completion(definition, nil)
         })
 
         task.resume()

@@ -9,7 +9,7 @@
 import Foundation
 
 struct Response: Codable {
-    let definitions: [Definition]
-    let word: String
-    let pronunciation: String
+    let definitions: [Definition]?
+    let word: String?
+    let pronunciation: String?
 }

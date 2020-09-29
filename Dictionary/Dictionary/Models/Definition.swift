@@ -9,11 +9,11 @@
 import Foundation
 
 struct Definition: Codable {
-    let type: String
-    let definition: String
-    let example: String
-    let image: String
-    let emoji: String
+    let type: String?
+    let definition: String?
+    let example: String?
+    let image: String?
+    let emoji: String?
     
     enum CodingKeys: String, CodingKey {
         case type = "type"

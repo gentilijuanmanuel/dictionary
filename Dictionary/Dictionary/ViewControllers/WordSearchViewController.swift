@@ -91,7 +91,7 @@ class WordSearchViewController: BaseViewController {
                     print(error)
                     return
                 } else {
-                    self.navigateToResultScreen(definition: definition?.definitions.first ?? nil)
+                    self.navigateToResultScreen(definition: definition?.definitions?.first ?? nil)
                 }
             }
         }

@@ -40,12 +40,16 @@ class WordResultViewController: BaseViewController {
     }
     
     private func loadDefinitionData() {
-        self.titleLabel.text = self.word ?? "" + " " + definition!.emoji
+        self.titleLabel.text = self.word ?? "" + " " + definition!.emoji!
         self.wordTypeLabel.text = self.definition?.type
         self.definitionLabel.text = self.definition?.definition
         self.exampleLabel.text = self.definition?.example
         
-        if let url = URL(string: self.definition!.image) {
+        guard let image = self.definition!.image else {
+            return
+        }
+        
+        if let url = URL(string: image) {
             DispatchQueue.global().async {
                 if let data = try? Data( contentsOf:url) {
                     DispatchQueue.main.async {

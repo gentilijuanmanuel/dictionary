@@ -11,6 +11,8 @@ import UIKit
 class WordSearchViewController: BaseViewController {
     
     // MARK: - Properties
+    var word: String = ""
+    
     var doneBarButtonItem: UIBarButtonItem = UIBarButtonItem()
     var clearWordBarButtonItem: UIBarButtonItem = UIBarButtonItem()
     
@@ -29,7 +31,7 @@ class WordSearchViewController: BaseViewController {
     override func setupUI() {
         self.addButtonsOnKeyboard()
         self.searchWordButton.isEnabled = false
-        self.searchWordTextField.addTarget(self, action: #selector(self.textFieldDidChange), for: .editingChanged)
+        self.setupSearchTextField()
     }
 
     // MARK: - Private funcs
@@ -50,6 +52,11 @@ class WordSearchViewController: BaseViewController {
         doneToolbar.sizeToFit()
         
         self.searchWordTextField.inputAccessoryView = doneToolbar
+    }
+    
+    private func setupSearchTextField() {
+        self.searchWordTextField.delegate = self
+        self.searchWordTextField.addTarget(self, action: #selector(self.textFieldDidChange), for: .editingChanged)
     }
     
     private func navigateToResultScreen(definition: Definition?) {
@@ -102,4 +109,25 @@ class WordSearchViewController: BaseViewController {
         }
     }
     
+}
+
+extension WordSearchViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.endEditing(true)
+        return true
+    }
+    
+    func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
+        if textField.text != "" {
+            return true
+        } else {
+            textField.placeholder = "type!"
+            return false
+        }
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        self.word = textField.text!
+        textField.placeholder = "apple"
+    }
 }

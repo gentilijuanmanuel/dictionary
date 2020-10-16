@@ -9,9 +9,6 @@
 import UIKit
 
 enum DictionaryColors {
-    static var defaut: UIColor {
-        return UIViewController().isDarkMode ? .white : .black
-    }
-    
-    static let primary: UIColor = UIColor(hex: "#1F628EFF")!
+    static let defaut: UIColor = UIColor(named: "DefaultColor")!
+    static let primary: UIColor = UIColor(named: "PrimaryColor")!
 }

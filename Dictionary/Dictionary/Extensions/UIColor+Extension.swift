@@ -8,6 +8,7 @@
 
 import UIKit
 
+/// this is not used anymore. Stays here for reference
 extension UIColor {
     public convenience init?(hex: String) {
         let r, g, b, a: CGFloat
